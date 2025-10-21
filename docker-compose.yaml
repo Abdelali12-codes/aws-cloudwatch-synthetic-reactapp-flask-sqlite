@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   backend:
-    build: ./backend
+    build: ./FlaskApp
     container_name: flask-backend
     ports:
       - "5000:5000"
@@ -17,7 +17,7 @@ services:
       - app-network
 
   frontend:
-    build: ./frontend
+    build: ./ReactApp
     container_name: react-frontend
     ports:
       - "3000:80"
